@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body[data-theme="dark"] {
+  --primary-app-bg-color: #11161f;
+  --element-bg-color: #24282e;
+  --text-color: #f0f6fc;
+}
+
+body[data-theme="light"] {
+  --primary-app-bg-color: #eff3f8;
+  --element-bg-color: #cae093;
+  --text-color: #111314;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+
+  background-color: var(--primary-app-bg-color);
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

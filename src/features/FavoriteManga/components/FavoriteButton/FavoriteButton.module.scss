@@ -1,0 +1,18 @@
+@mixin iconCommon {
+  cursor: pointer;
+
+  width: 60px;
+  height: 60px;
+}
+
+.icon {
+  color: #ffffff;
+
+  @include iconCommon;
+}
+
+.iconActive {
+  color: #800080;
+
+  @include iconCommon;
+}
